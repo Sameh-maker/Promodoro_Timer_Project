@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.enjoy {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.container {
+    width: 300px;
+    /* background-color: #ddd; */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.timeContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.minutes,
+.seconds {
+    background-color: #eee;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.timeCategory {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.timeNumber {
+    font-size: 45px;
+}
+
+/* styling the buttons section */
+
+.buttons {
+    margin: 15px auto;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.startBtn,
+.pauseBtn,
+.restartBtn {
+    border: none;
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+
+}
+
+.startBtn,
+.pauseBtn,
+.restartBtn:hover {
+    cursor: pointer;
+}
+
+.message {
+    color: green;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    visibility: hidden;
+}
+
+.msgImg {
+    width: 60px;
+}
+
+/* added an animation to restartBtn to start again */
+.animation {
+    color: green;
+    animation: swipe 1s infinite;
+}
+
+@keyframes swipe {
+    from {
+        transform: scale(0.9, 0.9);
+    }
+
+    to {
+        transform: scale(1.001, 1.001);
+    }
+}
